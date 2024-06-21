@@ -1,0 +1,302 @@
+/* Header Container */
+.container1 {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-image:url("images/background.jpeg");
+  background-repeat:no-repeat;
+  background-size:100%100%;
+}
+
+/* Logo */
+.logo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 55%;
+}
+
+/* User Profile */
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Avatar */
+.avatar img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right:0px;
+  margin-left: 30px;
+}
+
+/* User Actions */
+.user-actions {
+  display: flex;
+  
+}
+
+.user-actions a {
+  margin-left: 0px;
+  text-decoration: none;
+  color: white;
+}
+.user-actions button {
+  padding: 10px 15px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  border: 1px white-space;
+  cursor: pointer;
+}
+
+.user-actions a:hover {
+  color: #555;
+}
+/* Search Bar */
+.search-bar {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 50px;
+
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+}
+
+.search-bar button {
+  padding: 2px 8px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: 4px white-space;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #555;
+}
+
+hr#line{
+border:1px solid black;
+}
+
+/* Navigation */
+nav {
+  background-color: none;
+  padding: 10px;
+  height: 100px;
+  
+}
+
+.navigation-links {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 0px;
+  display: flex;
+}
+
+
+.navigation-links.right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height:5px;
+}
+
+.navigation-links li {
+  padding: 15px;
+  width: 150px;
+  height:10px;
+}
+
+.navigation-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-links li a:hover {
+  color: red;
+}
+
+
+
+/*Body start*/
+
+body{
+	background-color: #C4A484;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row{
+  display:flex;
+
+  margin:0px;
+} 
+
+.column {
+  flex:25%;
+  float: left;
+  width: 33.33%;
+  margin-bottom: 46px;
+  padding: 0 22px 22px 0;
+  background-color: #000080;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* text-align: center; */
+ 
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #E6E6FA;
+}
+
+.container2 {
+  padding: 0 16px;
+}
+
+.container3::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.card img {
+/* width 100%; */
+height: fit-content;
+
+}
+
+.container4{
+  padding:16px;
+}
+.title {
+  color: #000080;
+  font-size: 12px;
+}
+.card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/*form*/
+
+.upgrade-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font-family: Arial, sans-serif; /* Add your preferred font family */
+}
+
+.upgrade-form h1 {
+  text-align: center;
+  color: #333; /* Adjust the color to your preference */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #555; /* Adjust the color to your preference */
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif; /* Add your preferred font family */
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Arial, sans-serif; /* Add your preferred font family */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+/* Footer*/
+
+h2{
+	color:red;
+}*{
+	
+	padding:0;
+	color:#d9d9d9;
+	box-sizing:border-box;
+	font-size:'poppins',sans-serif;
+}
+
+footer{
+	
+	bottom:0px;
+	width:100%;
+	background:#111;
+}
+.main-content{
+	display:flex;
+}
+
+.main-content .box{
+	flex-basis:50%;
+	padding:10px 20px;
+}
+.box h2{
+	font-size:1.125rem;
+	font-weight:600;
+	text-transform:uppercase;
+}
+.box .content{
+	margin:20px 0 0 0;
+}
+
+.left .content .social{
+	margin:20px 0 0 0;
+}
+
+.left .content .social a{
+	padding: 0px;
+}
+
+
+

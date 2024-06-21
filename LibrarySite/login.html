@@ -1,0 +1,94 @@
+<!-- Danushan-IT22607546-->
+<!DOCTYPEhtml>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="./styles/new 3.css">
+	<link rel="stylesheet" href="./styles/login.css">
+	
+
+</head>
+
+<body>
+ <?php include 'Header.html';
+?> 
+ 
+<header>
+<div class="container">
+    <div class="logo">
+      <img SRC="images/Logo3.1.png" alt="Logo 3">
+     
+    </div>
+    <div class="user-profile">
+         <div class="avatar">
+             <img SRC="images/user.jpg" alt="User Avatar">
+         </div>
+		 
+         <div class="user-actions">
+              <button type="submit"><a href="login.html">Login</a></button>
+	          <button type="submit"><a href="signup.html">Sign Up</a></button>
+         </div>
+		 
+	     <div class="search-bar">
+              <form action="search.php" method="GET">
+              <input type="text" name="query" placeholder="Search a book...">
+              <button type="submit">Search</button>
+              </form>
+         </div>
+    </div>
+  
+  <nav>
+    <ul class="navigation-links">
+      <li><button type="submit"><a href="helpdesk.html">Helpdesk</a></button></li>
+      <li><button type="submit"><a href="suggestions.html">Suggestions</a></button></li>
+      <li><button type="submit"><a href="events.html">Events</a></button></li>
+    </ul>
+	</div>
+	
+<hr id="line">
+    <ul class="navigation-links">
+      <li><a href="home.php">Home</a></li>
+	  <li><a href="signup.html">Register</a></li>
+	  <li><a href="facilities.html">Facilities</a></li>
+	   <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li> 
+      <li><a href="library-guide.html">Library Guide</a></li>
+    </ul>
+    </nav>
+ <hr id= "line">
+ 
+</header>
+<div>
+	<div class="my">
+
+
+	<div class="login-box">
+		<img src="images/man.jpeg" alt="icon">
+		<h2>Library</h2>
+		<h3>User Name:</h3>
+		<input type="text" name="" placeholder="User name">
+		<h3>Password</h3>
+		<input type="password" name="" placeholder="Password" id="pass">
+		<i class="fa fa-eye" onclick="see()"></i>
+		<button type="button"><a href="login.html">Login</a></button>
+		<button type="button"><a href="Registration.html">Register</a></button>
+		<button type="submit" class="submit">submit</button>
+	</div>
+	</div>
+			
+
+	<script>
+		function see(){
+			var x=document.getElementById("pass");
+			if(x.type =="password"){
+				x.type="type";
+			}
+			else{
+				x.type="password"
+			}
+		}
+	</script>
+</div>
+
+</body>
+</html>

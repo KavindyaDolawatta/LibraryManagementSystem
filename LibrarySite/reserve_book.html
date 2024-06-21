@@ -1,0 +1,230 @@
+<!-- Dilsha-IT22592444-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogwarts University Library</title>
+  <link rel="stylesheet" href="styles/Lguide.css">
+  <link rel="stylesheet" href="styles/new 3.css">
+
+ <style>
+    body {
+      background-image: url('images/bckground.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    form {
+      margin-top: 20px;
+    }
+    
+    label {
+      color: black;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+      color: black;
+      outline: 1px solid black;
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid black;
+    }
+    
+    .form-group {
+      margin-bottom: 10px;
+    }
+    
+    button[type="submit"] {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      border: none;
+    }
+    
+    .reserve-book {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .reserve-book .form-container {
+      flex: 1;
+      margin-right: 20px;
+    }
+    
+    .reserve-book .image-container {
+      flex: 1;
+    }
+    
+    .image-container img {
+      width: 500px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+    <div class="logo">
+      <img SRC="images/logo.jpeg" alt="Logo 3">
+      </a>
+    </div>
+    <div class="user-profile">
+         <div class="avatar">
+             <img SRC="images/profile.jpeg" alt="User Avatar">
+         </div>
+		 
+         <div class="user-actions">
+              <button type="submit"><a href="login.html">Login</a></button>
+	          <button type="submit"><a href="signup.html">Sign Up</a></button>
+         </div>
+		 
+	     <div class="search-bar">
+              <form action="search.php" method="GET">
+              <input type="text" name="query" placeholder="Search a book...">
+              <button type="submit">Search</button>
+              </form>
+         </div>
+    </div>
+  
+  <nav>
+    <ul class="navigation-links">
+      <li><button type="submit"><a href="helpdesk.php">Helpdesk</a></button></li>
+      <li><button type="submit"><a href="suggestions.html">Suggestions</a></button></li>
+      <li><button type="submit"><a href="events.html">Events</a></button></li>
+    </ul>
+	</div>
+	
+<hr id="line">
+    <ul class="navigation-links">
+      <li><a href="home.php">Home</a></li>
+	  <li><a href="signup.html">Register</a></li>
+	  <li><a href="facilities.html">Facilities</a></li>
+	   <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contact%20us.html">Contact Us</a></li> 
+      <li><a href="library-guide.html">Library Guide</a></li>
+    </ul>
+    </nav>
+ <hr id= "line">
+  </header>
+<br>
+<img src="images/reserve11.jpg" alt="Image">
+<p style="color: black; font-weight: bold;">Reserving a book at Hogwarts University Library is a simple and convenient way to ensure you have access to the books you need. Our reserve book service allows you to secure a copy of a desired book for a specified period, ensuring it will be available for you when you visit the library. Whether you're conducting research, studying for exams, or simply exploring your interests, reserving a book guarantees that it will be waiting for you on the designated pickup date. Take advantage of this service and embark on a seamless reading experience at Hogwarts University Library.</p>
+    
+
+  <section class="reserve-book">
+	<div class="form-container">
+      <h2>Reserve a Book</h2>
+      <form action="reserve.php" method="POST">
+        <div class="form-group">
+          <label for="book-title">Book Title:</label>
+          <input type="text" id="book-title" name="book-title" required>
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author" required>
+        </div>
+
+        <div class="form-group">
+          <label for="user-name">Your Name:</label>
+          <input type="text" id="user-name" name="user-name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Pickup Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Reserve</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="image-container">
+      <img src="images/reserve13.jpg" alt="Image">
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+<footer>
+		<div class="main-content">
+		<div class="left box">
+		<h2>About us</h2>
+		<div class="content">
+		<p>Hogwarts School's library of Witchcraft and Wizardry was founded by four of the most brilliant witches and wizards of their time.</p>
+		<div class="social">
+		<a href="#"><i class="fa fa-facebook-f"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-instagram"></i></a>
+		<a href="#"><i class="fa fa-youtube"></i></a>
+		
+		</div>
+		</div>
+		</div>
+		<div class="center box">
+		<h2>Address</h2>
+		<div class="content">
+		
+		<div class="place">
+		<i class="fa fa-map-marker"></i>
+		<span class="text">Anagarika Mawatha</span>
+		</div>
+		
+		<div class="phone">
+		<i class="fa fa-phone"></i>
+		<span class="text">01134567829</span>
+		</div>
+		
+		<div class="email">
+		<i class="fa fa-envelope"></i>
+		<span class="text">Hogwarts@gmail.com</span>
+		</div>
+		</div>
+		
+		<div class="right_box">
+			<h2>Contact</h2>
+			<div class="contact">
+			<form>
+				<div class="email">
+				<div class="text">Email *</div>
+				<input type="email" required>
+				</div>
+				<div class="msg">
+					<div class="text">Message *</div>
+					<textarea rows="2" cols="25" required></textarea>
+				</div>
+				<div class="btn">
+				<button type="submit"style="background-color: green; color: white;">send</button>
+				
+				</div>
+			</form>
+			</div>
+		</div>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>

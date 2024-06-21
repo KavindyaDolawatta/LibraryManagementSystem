@@ -1,0 +1,94 @@
+<!-- Danushan-IT22607546-->
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>Registration page</title>
+<link rel="stylesheet" href="./styles/Registration.css">
+
+<link rel="stylesheet" href="./styles/footer.css">
+<link rel="stylesheet" href="./styles/new 3.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div class="page">
+	<header>
+  <div class="container">
+    <div class="logo">
+	  <img SRC= "images/Logo3.1.png" alt="Logo 3">
+      
+     
+    </div>
+    <div class="user-profile">
+         <div class="avatar">
+             <img SRC="images/user.jpg" alt="User Avatar">
+         </div>
+		 
+         <div class="user-actions">
+              <button type="submit"><a href="login.html">Login</a></button>
+	          <button type="submit"><a href="signup.html">Sign Up</a></button>
+         </div>
+		 
+	     <div class="search-bar">
+              <form action="search.php" method="GET">
+              <input type="text" name="query" placeholder="Search a book...">
+              <button type="submit">Search</button>
+              </form>
+         </div>
+    </div>
+  
+  <nav>
+    <ul class="navigation-links">
+      <li><button type="submit"><a href="helpdesk.html">Helpdesk</a></button></li>
+      <li><button type="submit"><a href="suggestions.html">Suggestions</a></button></li>
+      <li><button type="submit"><a href="events.html">Events</a></button></li>
+    </ul>
+	</div>
+	
+<hr id="line">
+    <ul class="navigation-links">
+      <li><a href="home.php">Home</a></li>
+	  <li><a href="signup.html">Register</a></li>
+	  <li><a href="facilities.html">Facilities</a></li>
+	   <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li> 
+      <li><a href="library-guide.html">Library Guide</a></li>
+    </ul>
+    </nav>
+ <hr id= "line">
+ 
+</header>
+		<div class="bar">
+		</div>
+		
+		<div id="login_form" class="login_page">
+			<div class="form_box">
+			<div class="button_box">
+			<button type="button" onclick="login()" class="but"><a href="It22607546_login.html">Login</a></button>
+			<button type="button" onclick="register()" class="but"><a href="Registration.html">Register</a></button>
+			</div>
+			<!---registation form--->
+			<form id ="register" class="input_register">
+				<input type="text" class="input_field" placeholder="First name" required>
+				<input type="text" class="input_field" placeholder="Last name" required>
+				<input type="Email" class="input_field" placeholder="Email ID" required>
+				<input type="password" class="input_field" placeholder="Enter password" required>
+				<input type="password" class="input_field" placeholder="confirm password" required>
+				<input type="checkbox" class="check_box"><span>I agree to the term and conditions</span>
+				<button type="submit" class="submit">Register</button>
+			</form>
+
+			</div>
+		</div>
+		
+
+	</div>
+
+	<script>
+	var response=confirm("Would you like to register");
+	</script>
+</body>
+</html>
+

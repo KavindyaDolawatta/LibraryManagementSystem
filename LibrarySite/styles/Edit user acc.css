@@ -1,0 +1,26 @@
+.form{
+	
+	width:250px;
+	height:38px;
+}
+.form_1{
+	
+	margin:540px;
+	
+}
+.lable{
+	
+	color:white;
+}
+body{
+ background-color:green;
+ 
+  font-family: Arial, Helvetica, sans-serif;
+ 
+ }
+.h2 {
+  
+  text-align:center;
+  background-color: white;
+  color: black;
+}

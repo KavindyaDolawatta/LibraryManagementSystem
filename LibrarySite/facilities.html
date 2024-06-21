@@ -1,0 +1,254 @@
+<!-- Dilsha-IT22592444-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogwarts University Library</title>
+  <link rel="stylesheet" href="styles/facilities.css">
+  <link rel="stylesheet" href="styles/new 3.css">
+	
+
+<style>
+    body {
+      background-image: url('images/bckground.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+
+
+
+</head>
+
+<body>
+<header>
+  <div class="container1">
+    <div class="logo">
+      <img SRC="images/logo.jpeg" alt="Logo 3">
+      </a>
+    </div>
+    <div class="user-profile">
+         <div class="avatar">
+             <img SRC="images/profile.jpeg" alt="User Avatar">
+         </div>
+		 
+         <div class="user-actions">
+              <button type="submit" style="background-color: black; color: white;"><a href="login.html">Login</a></button>
+	          <button type="submit" style="background-color: black; color: white;"><a href="signup.html">Sign Up</a></button>
+         </div>
+		 
+	     <div class="search-bar">
+              <form action="search.php" method="GET">
+              <input type="text" name="query" placeholder="Search a book...">
+              <button type="submit" style="background-color: black; color: white;">Search</button>
+              </form>
+         </div>
+    </div>
+  
+  <nav>
+    <ul class="navigation-links">
+      <li><button type="submit style="background-color: black; color: white;"><a href="helpdesk.html">Helpdesk</a></button></li>
+      <li><button type="submit style="background-color: black; color: white;"><a href="suggestions.html">Suggestions</a></button></li>
+      <li><button type="submit style="background-color: black; color: white;"><a href="events.html">Events</a></button></li>
+    </ul>
+	</div>
+	
+<hr id="line">
+    <ul class="navigation-links">
+      <li><a href="home.php">Home</a></li>
+	  <li><a href="signup.html">Register</a></li>
+	  <li><a href="facilities.html">Facilities</a></li>
+	   <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contact%20us.html">Contact Us</a></li> 
+      <li><a href="library-guide.html">Library Guide</a></li>
+    </ul>
+    </nav>
+ <hr id= "line">
+ 
+</header>
+
+ <!--start-->
+ <br>
+ <br>
+ <br>
+
+ <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/istockphoto-1388334346-612x612.jpg" alt="Borrow Books" style="width:100%">
+      <div class="container2">
+        <h2><a href="borrow_book.html">Borrow Books</a></h2>
+        <p class="title">Discover a world of books at your fingertips! Our website offers a vast collection of captivating stories for all book lovers. Explore various genres, from gripping mysteries to inspiring non-fiction. With a user-friendly interface, finding your next read is effortless. Borrow books easily and embark on exciting literary adventures. Start your reading journey with us today and unlock the magic of storytelling. Happy reading!</p>
+        
+</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/digital lib.jpg" alt="Access Digital Library" style="width:100%">
+      <div class="container3">
+        <h2><a href="access_library.html">Access Digital Library</a></h2>
+        <p class="title">Welcome to our "Access Digital Library", where knowledge knows no boundaries. Dive into a realm of limitless information and resources right from the comfort of your own device. With our extensive collection of e-books, audiobooks, and online publications, you can explore diverse subjects and expand your horizons. Immerse yourself in a world of learning, research, and discovery with just a few clicks. Experience the convenience of accessing a wealth of knowledge anytime, anywhere. Join us on this digital journey and unlock a universe of intellectual possibilities</p>
+        
+</p>
+       
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/reserve.jpg" alt="Reserve Book" style="width:100%">
+      <div class="container4">
+        <h2><a href="reserve_book.html">Reserve Book</a></h2>
+        <p class="title">With our user-friendly platform, reserving your favorite books has never been easier. Explore our vast collection of titles and reserve the ones that capture your imagination. Whether it's a gripping novel, an insightful non-fiction work, or a captivating children's book, you can ensure that your desired books are available and waiting for you. Enjoy the convenience of reserving books in advance, guaranteeing their availability for your reading pleasure. Embark on a literary journey tailored to your preferences, and get ready to delve into captivating stories and enriching knowledge. Reserve your books today and embark on a reading experience like no other.</p>
+        
+        
+      </div>
+    </div>
+  </div>
+ 
+ </div>
+ <br>
+
+<div class="upgrade-form">
+       
+     
+
+  <h1 style="color:DodgerBlue;">Library Plan Upgrade Form</h1>
+
+  <form id="upgrade-form" action="facilities_php.php" method="POST">
+    <div class="form-group">
+      <label for="name">Username:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+
+<style>
+  option {
+    color: black;
+  }
+</style>
+
+<div class="form-group">
+  <label for="new-plan">New Plan:</label>
+  <select id="new-plan" name="new-plan" required>
+    <option value="">Select your new plan</option>
+    <option value="standard"><strong>Standard Plan</strong></option>
+    <option value="premium"><strong>Premium Plan</strong></option>
+  </select>
+</div>
+
+    <div class="form-group">
+      <label for="payment-method">Payment Method:</label>
+      <input type="radio" id="payment-method-card" name="payment-method" value="card" required>
+      <label for="payment-method-card">Credit/Debit Card</label>
+      <input type="radio" id="payment-method-paypal" name="payment-method" value="paypal" required>
+      <label for="payment-method-paypal">PayPal</label>
+    </div>
+
+    <div style="text-align: center;">
+      <button type="submit" style="background-color: blue; color: white;">Upgrade Plan</button>
+
+    
+</div>
+  </form>
+
+
+
+</div>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+	
+	<footer>
+
+	<style>
+  h2 {
+    font-weight: bold;
+    color: red;
+  }
+</style>
+
+		<div class="main-content">
+		<div class="left box">
+		<h2>About us</h2>
+		<div class="content">
+		<p>Hogwarts School's library of Witchcraft and Wizardry was founded by four of the most brilliant witches and wizards of their time.</p>
+		<div class="social">
+		<a href="#"><i class="fa fa-facebook-f"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-instagram"></i></a>
+		<a href="#"><i class="fa fa-youtube"></i></a>
+		
+		</div>
+		</div>
+		</div>
+		<div class="center box">
+		<h2>Address</h2>
+		<div class="content">
+		
+		<div class="place">
+		<i class="fa fa-map-marker"></i>
+		<span class="text">Anagarika Mawatha</span>
+		</div>
+		
+		<div class="phone">
+		<i class="fa fa-phone"></i>
+		<span class="text">01134567829</span>
+		</div>
+		
+		<div class="email">
+		<i class="fa fa-envelope"></i>
+		<span class="text">Hogwarts@gmail.com</span>
+		</div>
+		</div>
+		
+		<div class="right_box">
+			<h2>Contact</h2>
+			<div class="contact">
+			<form>
+				<div class="email">
+				<div class="text">Email *</div>
+				<input type="email" required>
+				</div>
+				<div class="msg">
+					<div class="text">Message *</div>
+					<textarea rows="2" cols="25" required></textarea>
+				</div>
+				<div class="btn">
+				<button type="submit">send</button>
+				
+				</div>
+			</form>
+			</div>
+		</div>
+		</div>
+		</div>
+	</footer>
+
+<script>
+  const form = document.getElementById('upgrade-form');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+
+    window.location.href = 'upgrade_plan.html';
+  });
+</script>
+
+</body>	
+</html>

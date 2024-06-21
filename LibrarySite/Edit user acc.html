@@ -1,0 +1,70 @@
+<!-- Ashani-IT22604194-->
+<?php
+include_once 'config.php';
+
+// Check if the item ID is provided
+if (!isset($_GET['username'])) {
+    echo "Username is not provided.";
+    exit;
+}
+
+// Get the username from the URL parameter
+$itemId = $_GET['username'];
+
+// Fetch the user details from the database based on the username
+$query = "SELECT * FROM `member` WHERE `username` = '$username'";
+$result = mysqli_query($conn, $query);
+$member = mysqli_fetch_assoc($result);
+
+// Check if the member exists
+if (!$member) {
+    echo "member not found.";
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- add a title (a) -->
+     <title>Edit user accont</title>
+<link rel="stylesheet" href="./styles/new 3.css">
+<link rel="stylesheet" href="./styles/Edit user acc.css">
+
+
+</head>
+
+<body>
+<!-- Include the header using php -->
+<?php include 'Header.html'; ?>
+
+<h2>Welcome to Librarian's Administrative page</h2>	
+	
+<h3>User Management</h3>
+<center>
+<h2>Edit User</h2>
+
+<form action="submitUpdateUser.php" method="POST">
+    <input type="hidden" name="username" value="<?php echo $user['username']; ?>">
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" value="<?php echo $user['first_name']; ?>">
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" value="<?php echo $user['last_name']; ?>">
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" value="<?php echo $user['phone_number']; ?>">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="<?php echo $user['email']; ?>">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" value="<?php echo $user['password']; ?>">
+
+    <input type="submit" value="Update">
+</form>
+
+</body>
+</html>
